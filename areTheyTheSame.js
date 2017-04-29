@@ -4,9 +4,15 @@ function comp(array1, array2){
   if (array1 === null || array2 === null) {
       return false;
   }
+
   var temp = array1.map(x => Math.pow(x,2));
   temp.sort((a,b) => a-b);
   
+
+  var temp =array1.map(x => Math.pow(x,2));
+  temp.sort((a,b) => a-b);
+
+
   array2.sort((a,b) => a-b);
   console.log(temp);
   console.log(array2);
@@ -17,7 +23,7 @@ function comp(array1, array2){
           return false;
       }
   }
-  
+
   return true;
 
 
